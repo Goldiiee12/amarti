@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to my Babysitting Portfolio</h1>
+        <h1>Welcome</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,10 +18,34 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Home</h2>
-            <p>Welcome to my Babysitting Portfolio. Here you can find information about my experience and projects.</p>
-        </section>
+        <div class="image-container">
+            <img src="/images/playing-with-kids.jpg" alt="Nanny and Child" class="semi-circle-image">
+        </div>
+        <div class="full-width-image">
+            <section class="modern-section">
+                <h2>Cherishing Every Giggle, Nurturing Every Moment.</h2>
+                <p>Welcome to my Babysitting Portfolio. Please take a look at some information about my experience.</p>
+                <ul class="modern-list">
+                    <li onclick="changeImage('/images/playing-with-kids.jpg')">Engaging children with fun activities</li>
+                    <li onclick="changeImage('/images/studying.jpg')">Providing educational support and tutoring</li>
+                    <li onclick="changeImage('/images/safety.jpg')">Ensuring safety and well-being</li>
+                    <li onclick="changeImage('/images/feeding.jpg')">Meal preparation with nutritional guidelines</li>
+                    <li onclick="changeImage('/images/cleaning.jpg')">Light housekeeping and organization</li>
+                </ul>
+                <script>
+                    function changeImage(imageFileName) {
+                        document.querySelector('.image-container img').src = imageFileName;
+                    }
+                    </script>
+                    
+            </section>        
+        </div>
     </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Babysitting Portfolio. All rights reserved.</p>
+            <p>Follow us on <a href="#">Social Media</a></p>
+        </div>
+    </footer>
 </body>
 </html>

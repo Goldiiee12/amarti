@@ -1,1 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+.full-width-image {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 50%; /* Adjust this height to your preference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Ensures text color is white for better readability */
+    text-align: center;
+    padding: 20px;
+}
+
+.full-width-image section {
+    max-width: 40%; /* Adjust this value as necessary */
+    background-color: rgba(155, 155, 155, 0.5); /* Semi-transparent background for readability */
+    border-radius: 8px;
+}
+
+.modern-section {
+    max-width: 800px; /* Set a maximum width for the content */
+    margin-right: auto; /* Push the section to the left by automatically adjusting the right margin */
+    margin-bottom: 30%;
+    padding: 40px; /* Add some padding */
+    background: rgba(255, 255, 255, 0.835); /* Slightly transparent background for a modern feel */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(255, 252, 252, 0.866); /* Subtle shadow for depth */
+}
+
+.modern-section h2 {
+    font-family: 'Helvetica Neue', sans-serif; /* Modern font */
+    font-size: 2.5rem; /* Larger font size */
+    color: #333; /* Dark grey color for better readability */
+    margin-bottom: 20px; /* Add space below the heading */
+    text-align: left; /* Center the text */
+}
+
+.modern-section p {
+    font-family: 'Helvetica Neue', sans-serif; /* Consistent font with the heading */
+    font-size: 1rem; /* Comfortable reading size */
+    color: #333; /* Slightly lighter text for the paragraph */
+    line-height: 1.6; /* More line spacing for readability */
+    text-align: left; /* Center the text */
+    font-size: x-large;
+}
+
+.modern-section-about {
+    max-width: 800px;
+    margin: 50px auto; /* Add more vertical margin for better spacing */
+    padding: 40px;
+    margin-bottom: 0%;
+    background: #ffffff; /* Solid white to match the cards on the homepage */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soften the shadow to match the homepage theme */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333; /* Dark grey text for readability */
+}
+
+.modern-section-about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px; /* More space below the heading */
+    text-align: left; /* Align to the left to match the homepage style */
+}
+
+.modern-section-about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px; /* More space below paragraphs for an airy feel */
+    text-align: left; /* Align to the left for consistency */
+}
+
+.modern-section-about article, .modern-section-about aside {
+    margin-bottom: 30px; /* More space below articles for separation */
+}
+
+.modern-section-about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px; /* Consistent spacing after subheadings */
+    color: #333; /* Maintain the blue accent color for subheadings */
+}
+
+.modern-section-about ul {
+    list-style-type: none; /* Maintain the clean look without bullets */
+    padding: 0;
+    margin-top: 0;
+}
+
+.modern-section-about ul li {
+    background: #f9f9f9; /* Light grey background for list items */
+    margin-bottom: 15px; /* Consistent spacing between list items */
+    padding: 15px; /* Slightly larger padding for a better look */
+    border-left: 4px solid #333; /* Blue accent on the left */
+    border-radius: 5px; /* Rounded corners for smoothness */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+    transition: background-color 0.2s; /* Subtle transition for interaction */
+    font-weight: normal; /* Match the font weight from the homepage */
+}
+
+.modern-section-about ul li:hover {
+    background-color: #e6e6e6; /* A lighter grey on hover for interaction */
+}
+
+.modern-section-about blockquote {
+    border-left: 4px solid #333;
+    padding-left: 20px; /* Slightly more padding for emphasis */
+    font-style: italic;
+    margin: 30px 0; /* More space around blockquotes */
+}
+
+.modern-section-about blockquote p {
+    color: #333; /* Dark text for contrast and readability */
+}
+
+.modern-section-contact {
+    max-width: 800px; /* Set a maximum width for the content */
+    margin: 50px auto; /* Add more vertical margin for better spacing */
+    padding: 40px;
+    margin-bottom: 40%;
+    padding: 40px; /* Add some padding */
+    background: rgba(255, 255, 255, 0.835); /* Slightly transparent background for a modern feel */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(255, 252, 252, 0.866); /* Subtle shadow for depth */
+}
+
+/* Additional styles for form elements */
+.modern-section-contact form {
+    width: 100%; /* Form takes full width of the section */
+}
+
+.modern-section-contact label {
+    width: 100%; /* Labels take full width */
+    margin-bottom: 0.5rem; /* Space below each label */
+}
+
+.modern-section-contact input[type="text"],
+.modern-section-contact input[type="email"],
+.modern-section-contact textarea {
+    width: 100%; /* Inputs and textarea take full width */
+    padding: 15px; /* Larger padding for input fields */
+    margin-bottom: 1rem; /* Space below each input field */
+    border: 1px solid #ccc; /* Subtle border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.modern-section-contact button {
+    padding: 15px 30px; /* Larger padding for the button */
+    font-size: 1rem; /* Adjust font size for the button text */
+    margin-top: 1rem; /* Space above the button */
+    /* Other button styles to match your theme */
+}
+
+.image-container {
+    width: calc(55%); /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    position: absolute; /* Position it over the parent element */
+    right: 0;
+    top: 53%; /* Align to the vertical middle */
+    overflow: hidden; /* Hide the overflow to create the semi-circle effect */
+    z-index: 10; /* Ensure it's above other elements, adjust number as needed */
+    padding: 1%;
+}
+
+.semi-circle-image {
+    width: 100%; /* Make image fill the container */
+    height: auto; /* Keep image aspect ratio */
+    border-top-left-radius: 100%; /* Semi-circle effect on the top left */
+    border-bottom-left-radius: 100%; /* Semi-circle effect on the bottom left */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    display: block; /* Remove default inline spacing */
+}
+
+.modern-list {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    margin-top: 20px; /* Adds some space above the list */
+}
+
+.modern-list li {
+    background: #444; /* Light background for each list item */
+    margin-bottom: 10px; /* Adds space between list items */
+    padding: 10px 15px; /* Adds padding inside each list item */
+    border-radius: 5px; /* Rounds the corners of list items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.modern-list li:hover {
+    background: #e9e9e9; /* Slightly darker background on hover */
+    transform: translateX(10px); /* Slight right movement on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #6df;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centers the container */
+}
+
+
+
+@media (max-width: 768px) {
+    .full-width-image img {
+        max-height: 150px; /* Smaller height for mobile devices */
+    }
+}
+
+
+
 
