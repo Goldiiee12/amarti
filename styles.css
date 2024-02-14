@@ -15,35 +15,45 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: hsla(0, 0%, 33%, 0.424); /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    padding: 20px 0; /* Uniform padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 header h1 {
     text-align: center;
+    font-size: 2.5rem; /* Larger font size for the title */
+    font-weight: lighter; /* Lighter font weight for a modern look */
+    margin-bottom: 10px; /* Space below the header title */
+}
+
+nav {
+    background-color: transparent; /* Transparent background for the nav to blend with the header */
+    padding: 0;
 }
 
 nav ul {
     list-style: none;
-    background-color: #444;
-    text-align: center;
     padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center items horizontally */
 }
 
 nav ul li {
-    display: inline;
+    padding: 10px 20px;
 }
 
 nav ul li a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
+    color: #fff; /* Maintain white color for links */
     text-decoration: none;
+    transition: color 0.3s ease; /* Transition for hover effect */
 }
 
-nav ul li a:hover {
-    background-color: #555;
+nav ul li a:hover, nav ul li a:focus {
+    color: #e6e6e6; /* Lighter color on hover/focus */
+    text-decoration: underline; /* No underline on hover/focus */
 }
 
 main {
@@ -110,7 +120,7 @@ main h2 {
     margin-bottom: 0%;
     background: #ffffff; /* Solid white to match the cards on the homepage */
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soften the shadow to match the homepage theme */
+    box-shadow: 0 4px 8px rgba(255, 252, 252, 0.866); /* Subtle shadow for depth */
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333; /* Dark grey text for readability */
 }
@@ -235,7 +245,7 @@ main h2 {
 }
 
 .modern-list li {
-    background: #444; /* Light background for each list item */
+    background: hsla(0, 0%, 33%, 0.424); /* Light background for each list item */
     margin-bottom: 10px; /* Adds space between list items */
     padding: 10px 15px; /* Adds padding inside each list item */
     border-radius: 5px; /* Rounds the corners of list items */
@@ -244,40 +254,82 @@ main h2 {
 }
 
 .modern-list li:hover {
-    background: #e9e9e9; /* Slightly darker background on hover */
+    background: hsla(0, 0%, 13%, 0.424); /* Slightly darker background on hover */
     transform: translateX(10px); /* Slight right movement on hover */
 }
 
 footer {
-    background-color: #333;
+    background-color:  hsla(0, 0%, 33%, 0.424); /* Same background as the header for consistency */
     color: white;
     text-align: center;
     padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow at the top for depth */
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 10px 0; /* More space around text */
+    font-size: 1rem; /* Standard font size */
 }
 
 footer a {
-    color: #6df;
+    color: #fff; /* White color for links for readability */
     text-decoration: none;
+    transition: color 0.3s ease; /* Transition for hover effect */
 }
 
-footer a:hover {
-    text-decoration: underline;
+footer a:hover, footer a:focus {
+    color: #e6e6e6; /* Lighter color on hover/focus */
+    text-decoration: underline; /* Underline on hover/focus for distinction */
 }
 
 .container {
     width: 80%;
+    max-width: 1140px; /* Max width to prevent the footer from stretching too far on large screens */
     margin: 0 auto; /* Centers the container */
 }
 
-
-
 @media (max-width: 768px) {
-    .full-width-image img {
-        max-height: 150px; /* Smaller height for mobile devices */
+    header h1 {
+        font-size: 2rem; /* Smaller font size for the title on smaller screens */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .modern-section, .modern-section-about, .modern-section-contact {
+        padding: 20px; /* Less padding for smaller screens */
+        margin: 20px auto; /* Adjust margin for smaller screens */
+        max-width: 90%; /* Increase width to use more of the screen */
+    }
+
+    .full-width-image {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .full-width-image section, .image-container {
+        max-width: 100%; /* Use full width for embedded sections/images */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .modern-section-about ul li, .modern-list li {
+        padding: 10px; /* Adjust padding for list items */
+        margin-bottom: 10px; /* Adjust spacing between list items */
+    }
+
+    .semi-circle-image, .image-container {
+        width: 100%; /* Adjust image container to span full width */
+        top: auto; /* Adjust positioning */
+        position: relative; /* Change position to flow with the document */
+    }
+
+    footer {
+        padding: 10px 0; /* Adjust footer padding */
     }
 }
 
